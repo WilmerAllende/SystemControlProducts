@@ -332,8 +332,6 @@
                 </MenuItem>
               </SubComponents>
             </Menu>
-            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator4">
-            </MenuItem>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator5">
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
@@ -346,29 +344,6 @@
             </MenuItem>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator6">
             </MenuItem>
-            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator7">
-            </MenuItem>
-            <Menu class="javax.swing.JMenu" name="jMenu20">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Detalle"/>
-              </Properties>
-              <SubComponents>
-                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem17">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Detalle Compra"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem17ActionPerformed"/>
-                  </Events>
-                </MenuItem>
-                <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator16">
-                </MenuItem>
-                <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator17">
-                </MenuItem>
-                <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator18">
-                </MenuItem>
-              </SubComponents>
-            </Menu>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator1">
             </MenuItem>
           </SubComponents>
@@ -420,29 +395,6 @@
             </Menu>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator3">
             </MenuItem>
-            <Menu class="javax.swing.JMenu" name="jMenu40">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Catalogo de Productos"/>
-              </Properties>
-              <SubComponents>
-                <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator22">
-                </MenuItem>
-                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem18">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Lista por Categorias"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem18ActionPerformed"/>
-                  </Events>
-                </MenuItem>
-                <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator23">
-                </MenuItem>
-              </SubComponents>
-            </Menu>
-            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator8">
-            </MenuItem>
-            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator9">
-            </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem11">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Venta"/>
@@ -452,12 +404,6 @@
               </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator10">
-            </MenuItem>
-            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator11">
-            </MenuItem>
-            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator12">
-            </MenuItem>
-            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator2">
             </MenuItem>
           </SubComponents>
         </Menu>
@@ -518,14 +464,6 @@
             </MenuItem>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator28">
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem39">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Detalle"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem39ActionPerformed"/>
-              </Events>
-            </MenuItem>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator29">
             </MenuItem>
             <Menu class="javax.swing.JMenu" name="jMenu1">
@@ -549,21 +487,9 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem19ActionPerformed"/>
                   </Events>
                 </MenuItem>
-                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem44">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Lista"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem44ActionPerformed"/>
-                  </Events>
-                </MenuItem>
               </SubComponents>
             </Menu>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator30">
-            </MenuItem>
-            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator31">
-            </MenuItem>
-            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator32">
             </MenuItem>
           </SubComponents>
         </Menu>

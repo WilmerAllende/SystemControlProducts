@@ -128,16 +128,9 @@ public class frmPrincipal extends javax.swing.JFrame {
         jMenuItem21 = new javax.swing.JMenuItem();
         jSeparator14 = new javax.swing.JPopupMenu.Separator();
         jMenuItem22 = new javax.swing.JMenuItem();
-        jSeparator4 = new javax.swing.JPopupMenu.Separator();
         jSeparator5 = new javax.swing.JPopupMenu.Separator();
         jMenuItem4 = new javax.swing.JMenuItem();
         jSeparator6 = new javax.swing.JPopupMenu.Separator();
-        jSeparator7 = new javax.swing.JPopupMenu.Separator();
-        jMenu20 = new javax.swing.JMenu();
-        jMenuItem17 = new javax.swing.JMenuItem();
-        jSeparator16 = new javax.swing.JPopupMenu.Separator();
-        jSeparator17 = new javax.swing.JPopupMenu.Separator();
-        jSeparator18 = new javax.swing.JPopupMenu.Separator();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         menuventas = new javax.swing.JMenu();
         jMenu32 = new javax.swing.JMenu();
@@ -148,17 +141,8 @@ public class frmPrincipal extends javax.swing.JFrame {
         jMenuItem25 = new javax.swing.JMenuItem();
         jSeparator21 = new javax.swing.JPopupMenu.Separator();
         jSeparator3 = new javax.swing.JPopupMenu.Separator();
-        jMenu40 = new javax.swing.JMenu();
-        jSeparator22 = new javax.swing.JPopupMenu.Separator();
-        jMenuItem18 = new javax.swing.JMenuItem();
-        jSeparator23 = new javax.swing.JPopupMenu.Separator();
-        jSeparator8 = new javax.swing.JPopupMenu.Separator();
-        jSeparator9 = new javax.swing.JPopupMenu.Separator();
         jMenuItem11 = new javax.swing.JMenuItem();
         jSeparator10 = new javax.swing.JPopupMenu.Separator();
-        jSeparator11 = new javax.swing.JPopupMenu.Separator();
-        jSeparator12 = new javax.swing.JPopupMenu.Separator();
-        jSeparator2 = new javax.swing.JPopupMenu.Separator();
         menualmacen = new javax.swing.JMenu();
         jMenu34 = new javax.swing.JMenu();
         jMenuItem34 = new javax.swing.JMenuItem();
@@ -170,15 +154,11 @@ public class frmPrincipal extends javax.swing.JFrame {
         jSeparator27 = new javax.swing.JPopupMenu.Separator();
         jMenuItem38 = new javax.swing.JMenuItem();
         jSeparator28 = new javax.swing.JPopupMenu.Separator();
-        jMenuItem39 = new javax.swing.JMenuItem();
         jSeparator29 = new javax.swing.JPopupMenu.Separator();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem6 = new javax.swing.JMenuItem();
         jMenuItem19 = new javax.swing.JMenuItem();
-        jMenuItem44 = new javax.swing.JMenuItem();
         jSeparator30 = new javax.swing.JPopupMenu.Separator();
-        jSeparator31 = new javax.swing.JPopupMenu.Separator();
-        jSeparator32 = new javax.swing.JPopupMenu.Separator();
         menuinformes = new javax.swing.JMenu();
         jMenuItem29 = new javax.swing.JMenuItem();
         jSeparator51 = new javax.swing.JPopupMenu.Separator();
@@ -322,7 +302,6 @@ public class frmPrincipal extends javax.swing.JFrame {
         jMenu31.add(jMenuItem22);
 
         menucompras.add(jMenu31);
-        menucompras.add(jSeparator4);
         menucompras.add(jSeparator5);
 
         jMenuItem4.setText("Compra");
@@ -333,22 +312,6 @@ public class frmPrincipal extends javax.swing.JFrame {
         });
         menucompras.add(jMenuItem4);
         menucompras.add(jSeparator6);
-        menucompras.add(jSeparator7);
-
-        jMenu20.setText("Detalle");
-
-        jMenuItem17.setText("Detalle Compra");
-        jMenuItem17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem17ActionPerformed(evt);
-            }
-        });
-        jMenu20.add(jMenuItem17);
-        jMenu20.add(jSeparator16);
-        jMenu20.add(jSeparator17);
-        jMenu20.add(jSeparator18);
-
-        menucompras.add(jMenu20);
         menucompras.add(jSeparator1);
 
         jMenuBar1.add(menucompras);
@@ -388,22 +351,6 @@ public class frmPrincipal extends javax.swing.JFrame {
         menuventas.add(jMenu32);
         menuventas.add(jSeparator3);
 
-        jMenu40.setText("Catalogo de Productos");
-        jMenu40.add(jSeparator22);
-
-        jMenuItem18.setText("Lista por Categorias");
-        jMenuItem18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem18ActionPerformed(evt);
-            }
-        });
-        jMenu40.add(jMenuItem18);
-        jMenu40.add(jSeparator23);
-
-        menuventas.add(jMenu40);
-        menuventas.add(jSeparator8);
-        menuventas.add(jSeparator9);
-
         jMenuItem11.setText("Venta");
         jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -412,9 +359,6 @@ public class frmPrincipal extends javax.swing.JFrame {
         });
         menuventas.add(jMenuItem11);
         menuventas.add(jSeparator10);
-        menuventas.add(jSeparator11);
-        menuventas.add(jSeparator12);
-        menuventas.add(jSeparator2);
 
         jMenuBar1.add(menuventas);
 
@@ -461,14 +405,6 @@ public class frmPrincipal extends javax.swing.JFrame {
         });
         menualmacen.add(jMenuItem38);
         menualmacen.add(jSeparator28);
-
-        jMenuItem39.setText("Detalle");
-        jMenuItem39.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem39ActionPerformed(evt);
-            }
-        });
-        menualmacen.add(jMenuItem39);
         menualmacen.add(jSeparator29);
 
         jMenu1.setText("Existencias");
@@ -489,18 +425,8 @@ public class frmPrincipal extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem19);
 
-        jMenuItem44.setText("Lista");
-        jMenuItem44.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem44ActionPerformed(evt);
-            }
-        });
-        jMenu1.add(jMenuItem44);
-
         menualmacen.add(jMenu1);
         menualmacen.add(jSeparator30);
-        menualmacen.add(jSeparator31);
-        menualmacen.add(jSeparator32);
 
         jMenuBar1.add(menualmacen);
 
@@ -580,167 +506,325 @@ public class frmPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
-// RegistrarVenta11 proveedor = new RegistrarVenta11();  //crear el nuevo formulario
-//        boolean mostrar=true;
-//
-//            for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
-//                if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
-//                   mostrar=false;
-//                }
-//            }
-//            if(mostrar){ 
-//                bpnPrinicipal.add(proveedor);
-//                proveedor.show();  
-//            }        // TODO add your handling code here:
-       
-    }//GEN-LAST:event_jMenuItem11ActionPerformed
-
-    private void jMenuItem14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem14ActionPerformed
-//RegistrarProducto proveedor = new RegistrarProducto();  //crear el nuevo formulario
-//        boolean mostrar=true;
-//
-//            for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
-//                if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
-//                   mostrar=false;
-//                }
-//            }
-//            if(mostrar){
-//                int x=(bpnPrinicipal.getWidth()/2) - proveedor.getWidth()/2;
-//                int y=(bpnPrinicipal.getHeight()/2) - proveedor.getHeight()/2;
-//                proveedor.setLocation(x, y);
-//                bpnPrinicipal.add(proveedor);
-//                proveedor.show();  
-//            }         // TODO add your handling code here:
-       
-    }//GEN-LAST:event_jMenuItem14ActionPerformed
-
-    private void jMenuItem20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem20ActionPerformed
-        
-    
-       
-        
-    }//GEN-LAST:event_jMenuItem20ActionPerformed
-
-    private void jMenuItem22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem22ActionPerformed
-
-    }//GEN-LAST:event_jMenuItem22ActionPerformed
-
-    private void jMenuItem37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem37ActionPerformed
-//ModificarProducto proveedor = new ModificarProducto();  //crear el nuevo formulario
-//        boolean mostrar=true;
-//
-//            for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
-//                if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
-//                   mostrar=false;
-//                }
-//            }
-//            if(mostrar){ 
-//                bpnPrinicipal.add(proveedor);
-//                proveedor.show();  
-//            }         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem37ActionPerformed
-
     private void jMenuItem41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem41ActionPerformed
-// ModificarUsuario proveedor = new ModificarUsuario();  //crear el nuevo formulario
-//        boolean mostrar=true;
-//
-//            for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
-//                if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
-//                   mostrar=false;
-//                }
-//            }
-//            if(mostrar){
-//                int x=(bpnPrinicipal.getWidth()/2) - proveedor.getWidth()/2;
-//                int y=(bpnPrinicipal.getHeight()/2) - proveedor.getHeight()/2;
-//                proveedor.setLocation(x, y);
-//                bpnPrinicipal.add(proveedor);
-//                proveedor.show();  
-//            }        // TODO add your handling code here:
+  frmModificarUsuario proveedor = new frmModificarUsuario();  //crear el nuevo formulario
+                boolean mostrar=true;
+        
+                    for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
+                            if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
+                                   mostrar=false;
+                                }
+                        }
+                    if(mostrar){
+                            int x=(bpnPrinicipal.getWidth()/2) - proveedor.getWidth()/2;
+                            int y=(bpnPrinicipal.getHeight()/2) - proveedor.getHeight()/2;
+                            proveedor.setLocation(x, y);
+                            bpnPrinicipal.add(proveedor);
+                            proveedor.show();
+                        }         // TODO add your handling code here:
+
     }//GEN-LAST:event_jMenuItem41ActionPerformed
 
-    private void jMenuItem21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem21ActionPerformed
-
-    }//GEN-LAST:event_jMenuItem21ActionPerformed
-
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-          
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
-
-    private void jMenuItem17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem17ActionPerformed
-          
-    }//GEN-LAST:event_jMenuItem17ActionPerformed
-
-    private void jMenuItem23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem23ActionPerformed
-          
-    }//GEN-LAST:event_jMenuItem23ActionPerformed
-
-    private void jMenuItem25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem25ActionPerformed
-          
-    }//GEN-LAST:event_jMenuItem25ActionPerformed
-
-    private void jMenuItem18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem18ActionPerformed
-           // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem18ActionPerformed
-
-    private void jMenuItem34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem34ActionPerformed
-//        ifrRegistrarCategoria proveedor = new ifrRegistrarCategoria();  //crear el nuevo formulario
-//        boolean mostrar=true;
-//
-//            for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
-//                if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
-//                   mostrar=false;
-//                }
-//            }
-//            if(mostrar){ 
-//                bpnPrinicipal.add(proveedor);
-//                proveedor.show();  
-//            }  
-    }//GEN-LAST:event_jMenuItem34ActionPerformed
-
-    private void jMenuItem38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem38ActionPerformed
-          
-    }//GEN-LAST:event_jMenuItem38ActionPerformed
-
-    private void jMenuItem39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem39ActionPerformed
-          // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem39ActionPerformed
-
     private void jMenuItem29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem29ActionPerformed
+  frmDetalleCompra proveedor = new frmDetalleCompra();  //crear el nuevo formulario
+                boolean mostrar=true;
+        
+                    for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
+                            if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
+                                   mostrar=false;
+                                }
+                        }
+                    if(mostrar){
+                            int x=(bpnPrinicipal.getWidth()/2) - proveedor.getWidth()/2;
+                            int y=(bpnPrinicipal.getHeight()/2) - proveedor.getHeight()/2;
+                            proveedor.setLocation(x, y);
+                            bpnPrinicipal.add(proveedor);
+                            proveedor.show();
+                        }         // TODO add your handling code here:
     
     }//GEN-LAST:event_jMenuItem29ActionPerformed
 
     private void jMenuItem30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem30ActionPerformed
+  frmDetalleVenta proveedor = new frmDetalleVenta();  //crear el nuevo formulario
+                boolean mostrar=true;
+        
+                    for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
+                            if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
+                                   mostrar=false;
+                                }
+                        }
+                    if(mostrar){
+                            int x=(bpnPrinicipal.getWidth()/2) - proveedor.getWidth()/2;
+                            int y=(bpnPrinicipal.getHeight()/2) - proveedor.getHeight()/2;
+                            proveedor.setLocation(x, y);
+                            bpnPrinicipal.add(proveedor);
+                            proveedor.show();
+                        }         // TODO add your handling code here:
         
     }//GEN-LAST:event_jMenuItem30ActionPerformed
 
     private void jMenuItem36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem36ActionPerformed
+        frmRegistrarUsuario proveedor = new frmRegistrarUsuario();  //crear el nuevo formulario
+                boolean mostrar=true;
+        
+                    for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
+                            if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
+                                   mostrar=false;
+                                }
+                        }
+                    if(mostrar){
+                            int x=(bpnPrinicipal.getWidth()/2) - proveedor.getWidth()/2;
+                            int y=(bpnPrinicipal.getHeight()/2) - proveedor.getHeight()/2;
+                            proveedor.setLocation(x, y);
+                            bpnPrinicipal.add(proveedor);
+                            proveedor.show();
+                        }         // TODO add your handling code here:
       
     }//GEN-LAST:event_jMenuItem36ActionPerformed
 
     private void jMenuItem42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem42ActionPerformed
         // TODO add your handling code here:
+  frmEliminarUsuario proveedor = new frmEliminarUsuario();  //crear el nuevo formulario
+                boolean mostrar=true;
+        
+                    for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
+                            if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
+                                   mostrar=false;
+                                }
+                        }
+                    if(mostrar){
+                            int x=(bpnPrinicipal.getWidth()/2) - proveedor.getWidth()/2;
+                            int y=(bpnPrinicipal.getHeight()/2) - proveedor.getHeight()/2;
+                            proveedor.setLocation(x, y);
+                            bpnPrinicipal.add(proveedor);
+                            proveedor.show();
+                        }         // TODO add your handling code here:
      
     }//GEN-LAST:event_jMenuItem42ActionPerformed
+
+    private void jMenuItem19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem19ActionPerformed
+        // TODO add your handling code here:
+  frmModificarExistencias proveedor = new frmModificarExistencias();  //crear el nuevo formulario
+                boolean mostrar=true;
+        
+                    for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
+                            if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
+                                   mostrar=false;
+                                }
+                        }
+                    if(mostrar){
+                            int x=(bpnPrinicipal.getWidth()/2) - proveedor.getWidth()/2;
+                            int y=(bpnPrinicipal.getHeight()/2) - proveedor.getHeight()/2;
+                            proveedor.setLocation(x, y);
+                            bpnPrinicipal.add(proveedor);
+                            proveedor.show();
+                        }         // TODO add your handling code here:
+
+    }//GEN-LAST:event_jMenuItem19ActionPerformed
+
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        // TODO add your handling code here:
+        frmRegistrarExistencias proveedor = new frmRegistrarExistencias();  //crear el nuevo formulario
+                boolean mostrar=true;
+        
+                    for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
+                            if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
+                                   mostrar=false;
+                                }
+                        }
+                    if(mostrar){
+                            int x=(bpnPrinicipal.getWidth()/2) - proveedor.getWidth()/2;
+                            int y=(bpnPrinicipal.getHeight()/2) - proveedor.getHeight()/2;
+                            proveedor.setLocation(x, y);
+                            bpnPrinicipal.add(proveedor);
+                            proveedor.show();
+                        }         // TODO add your handling code here:
+
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
+
+    private void jMenuItem38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem38ActionPerformed
+    frmListadoProductos proveedor = new frmListadoProductos();  //crear el nuevo formulario
+                boolean mostrar=true;
+        
+                    for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
+                            if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
+                                   mostrar=false;
+                                }
+                        }
+                    if(mostrar){
+                            int x=(bpnPrinicipal.getWidth()/2) - proveedor.getWidth()/2;
+                            int y=(bpnPrinicipal.getHeight()/2) - proveedor.getHeight()/2;
+                            proveedor.setLocation(x, y);
+                            bpnPrinicipal.add(proveedor);
+                            proveedor.show();
+                        }         // TODO add your handling code here:
+
+    }//GEN-LAST:event_jMenuItem38ActionPerformed
+
+    private void jMenuItem37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem37ActionPerformed
+  frmModificarProducto proveedor = new frmModificarProducto();  //crear el nuevo formulario
+                boolean mostrar=true;
+        
+                    for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
+                            if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
+                                   mostrar=false;
+                                }
+                        }
+                    if(mostrar){
+                            int x=(bpnPrinicipal.getWidth()/2) - proveedor.getWidth()/2;
+                            int y=(bpnPrinicipal.getHeight()/2) - proveedor.getHeight()/2;
+                            proveedor.setLocation(x, y);
+                            bpnPrinicipal.add(proveedor);
+                            proveedor.show();
+                        }         // TODO add your handling code here:
+
+    }//GEN-LAST:event_jMenuItem37ActionPerformed
+
+    private void jMenuItem14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem14ActionPerformed
+  frmProducto proveedor = new frmProducto();  //crear el nuevo formulario
+                boolean mostrar=true;
+        
+                    for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
+                            if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
+                                   mostrar=false;
+                                }
+                        }
+                    if(mostrar){
+                            int x=(bpnPrinicipal.getWidth()/2) - proveedor.getWidth()/2;
+                            int y=(bpnPrinicipal.getHeight()/2) - proveedor.getHeight()/2;
+                            proveedor.setLocation(x, y);
+                            bpnPrinicipal.add(proveedor);
+                            proveedor.show();
+                        }         // TODO add your handling code here:
+
+
+    }//GEN-LAST:event_jMenuItem14ActionPerformed
+
+    private void jMenuItem34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem34ActionPerformed
+  frmCategoria proveedor = new frmCategoria();  //crear el nuevo formulario
+                boolean mostrar=true;
+        
+                    for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
+                            if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
+                                   mostrar=false;
+                                }
+                        }
+                    if(mostrar){
+                            int x=(bpnPrinicipal.getWidth()/2) - proveedor.getWidth()/2;
+                            int y=(bpnPrinicipal.getHeight()/2) - proveedor.getHeight()/2;
+                            proveedor.setLocation(x, y);
+                            bpnPrinicipal.add(proveedor);
+                            proveedor.show();
+                        }         // TODO add your handling code here:
+
+    }//GEN-LAST:event_jMenuItem34ActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+  frmRegistrarCompra proveedor = new frmRegistrarCompra();  //crear el nuevo formulario
+                boolean mostrar=true;
+        
+                    for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
+                            if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
+                                   mostrar=false;
+                                }
+                        }
+                    if(mostrar){
+                            int x=(bpnPrinicipal.getWidth()/2) - proveedor.getWidth()/2;
+                            int y=(bpnPrinicipal.getHeight()/2) - proveedor.getHeight()/2;
+                            proveedor.setLocation(x, y);
+                            bpnPrinicipal.add(proveedor);
+                            proveedor.show();
+                        }         // TODO add your handling code here:
+
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenuItem22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem22ActionPerformed
+  frmModificarProveedor proveedor = new frmModificarProveedor();  //crear el nuevo formulario
+                boolean mostrar=true;
+        
+                    for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
+                            if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
+                                   mostrar=false;
+                                }
+                        }
+                    if(mostrar){
+                            int x=(bpnPrinicipal.getWidth()/2) - proveedor.getWidth()/2;
+                            int y=(bpnPrinicipal.getHeight()/2) - proveedor.getHeight()/2;
+                            proveedor.setLocation(x, y);
+                            bpnPrinicipal.add(proveedor);
+                            proveedor.show();
+                        }         // TODO add your handling code here:
+
+    }//GEN-LAST:event_jMenuItem22ActionPerformed
+
+    private void jMenuItem21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem21ActionPerformed
+        frmListaProveedor proveedor = new frmListaProveedor();  //crear el nuevo formulario
+                boolean mostrar=true;
+        
+                    for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
+                            if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
+                                   mostrar=false;
+                                }
+                        }
+                    if(mostrar){
+                            int x=(bpnPrinicipal.getWidth()/2) - proveedor.getWidth()/2;
+                            int y=(bpnPrinicipal.getHeight()/2) - proveedor.getHeight()/2;
+                            proveedor.setLocation(x, y);
+                            bpnPrinicipal.add(proveedor);
+                            proveedor.show();
+                        }         // TODO add your handling code here:
+
+    }//GEN-LAST:event_jMenuItem21ActionPerformed
+
+    private void jMenuItem20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem20ActionPerformed
+        frmProveedor proveedor = new frmProveedor();  //crear el nuevo formulario
+                boolean mostrar=true;
+        
+                    for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
+                            if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
+                                   mostrar=false;
+                                }
+                        }
+                    if(mostrar){
+                            int x=(bpnPrinicipal.getWidth()/2) - proveedor.getWidth()/2;
+                            int y=(bpnPrinicipal.getHeight()/2) - proveedor.getHeight()/2;
+                            proveedor.setLocation(x, y);
+                            bpnPrinicipal.add(proveedor);
+                            proveedor.show();
+                        }         // TODO add your handling code here:
+
+    }//GEN-LAST:event_jMenuItem20ActionPerformed
+
+    private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
+        frmRegistrarVenta proveedor = new frmRegistrarVenta();  //crear el nuevo formulario
+                boolean mostrar=true;
+        
+                    for (int a=0;a<bpnPrinicipal.getComponentCount();a++){     // verificar si es instancia de algun componente que ya este en el jdesktoppane
+                            if( proveedor.getClass().isInstance( bpnPrinicipal.getComponent(a) )){
+                                   mostrar=false;
+                                }
+                        }
+                    if(mostrar){
+                            int x=(bpnPrinicipal.getWidth()/2) - proveedor.getWidth()/2;
+                            int y=(bpnPrinicipal.getHeight()/2) - proveedor.getHeight()/2;
+                            proveedor.setLocation(x, y);
+                            bpnPrinicipal.add(proveedor);
+                            proveedor.show();
+                        }         // TODO add your handling code here:
+
+    }//GEN-LAST:event_jMenuItem11ActionPerformed
+
+    private void jMenuItem25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem25ActionPerformed
+
+    }//GEN-LAST:event_jMenuItem25ActionPerformed
 
     private void jMenuItem24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem24ActionPerformed
 
     }//GEN-LAST:event_jMenuItem24ActionPerformed
 
-    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
-        // TODO add your handling code here:
-         
-    }//GEN-LAST:event_jMenuItem6ActionPerformed
+    private void jMenuItem23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem23ActionPerformed
 
-    private void jMenuItem19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem19ActionPerformed
-        // TODO add your handling code here:
-         
-    }//GEN-LAST:event_jMenuItem19ActionPerformed
-
-    private void jMenuItem44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem44ActionPerformed
-        // TODO add your handling code here:
-         
-    }//GEN-LAST:event_jMenuItem44ActionPerformed
+    }//GEN-LAST:event_jMenuItem23ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -786,7 +870,6 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu17;
     private javax.swing.JMenu jMenu18;
     private javax.swing.JMenu jMenu19;
-    private javax.swing.JMenu jMenu20;
     private javax.swing.JMenu jMenu21;
     private javax.swing.JMenu jMenu22;
     private javax.swing.JMenu jMenu23;
@@ -804,7 +887,6 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu34;
     private javax.swing.JMenu jMenu35;
     private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu40;
     private javax.swing.JMenu jMenu45;
     private javax.swing.JMenu jMenu46;
     private javax.swing.JMenu jMenu47;
@@ -829,8 +911,6 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem11;
     private javax.swing.JMenuItem jMenuItem14;
-    private javax.swing.JMenuItem jMenuItem17;
-    private javax.swing.JMenuItem jMenuItem18;
     private javax.swing.JMenuItem jMenuItem19;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem20;
@@ -846,12 +926,10 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem36;
     private javax.swing.JMenuItem jMenuItem37;
     private javax.swing.JMenuItem jMenuItem38;
-    private javax.swing.JMenuItem jMenuItem39;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem40;
     private javax.swing.JMenuItem jMenuItem41;
     private javax.swing.JMenuItem jMenuItem42;
-    private javax.swing.JMenuItem jMenuItem44;
     private javax.swing.JMenuItem jMenuItem46;
     private javax.swing.JMenuItem jMenuItem48;
     private javax.swing.JMenuItem jMenuItem5;
@@ -859,30 +937,19 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem60;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator10;
-    private javax.swing.JPopupMenu.Separator jSeparator11;
-    private javax.swing.JPopupMenu.Separator jSeparator12;
     private javax.swing.JPopupMenu.Separator jSeparator13;
     private javax.swing.JPopupMenu.Separator jSeparator14;
-    private javax.swing.JPopupMenu.Separator jSeparator16;
-    private javax.swing.JPopupMenu.Separator jSeparator17;
-    private javax.swing.JPopupMenu.Separator jSeparator18;
     private javax.swing.JPopupMenu.Separator jSeparator19;
-    private javax.swing.JPopupMenu.Separator jSeparator2;
     private javax.swing.JPopupMenu.Separator jSeparator20;
     private javax.swing.JPopupMenu.Separator jSeparator21;
-    private javax.swing.JPopupMenu.Separator jSeparator22;
-    private javax.swing.JPopupMenu.Separator jSeparator23;
     private javax.swing.JPopupMenu.Separator jSeparator27;
     private javax.swing.JPopupMenu.Separator jSeparator28;
     private javax.swing.JPopupMenu.Separator jSeparator29;
     private javax.swing.JPopupMenu.Separator jSeparator3;
     private javax.swing.JPopupMenu.Separator jSeparator30;
-    private javax.swing.JPopupMenu.Separator jSeparator31;
-    private javax.swing.JPopupMenu.Separator jSeparator32;
     private javax.swing.JPopupMenu.Separator jSeparator33;
     private javax.swing.JPopupMenu.Separator jSeparator34;
     private javax.swing.JPopupMenu.Separator jSeparator35;
-    private javax.swing.JPopupMenu.Separator jSeparator4;
     private javax.swing.JPopupMenu.Separator jSeparator5;
     private javax.swing.JPopupMenu.Separator jSeparator51;
     private javax.swing.JPopupMenu.Separator jSeparator52;
@@ -891,9 +958,6 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JPopupMenu.Separator jSeparator63;
     private javax.swing.JPopupMenu.Separator jSeparator64;
     private javax.swing.JPopupMenu.Separator jSeparator65;
-    private javax.swing.JPopupMenu.Separator jSeparator7;
-    private javax.swing.JPopupMenu.Separator jSeparator8;
-    private javax.swing.JPopupMenu.Separator jSeparator9;
     private javax.swing.JMenu menuadministracion;
     private javax.swing.JMenu menualmacen;
     private javax.swing.JMenu menucompras;
