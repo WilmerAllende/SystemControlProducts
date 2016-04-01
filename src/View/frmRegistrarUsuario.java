@@ -100,13 +100,7 @@ public class frmRegistrarUsuario extends javax.swing.JInternalFrame {
          Txtcontrasena.setEnabled(true);
          BtnRegistrarP.setEnabled(true);
          
-         checkcompras.setEnabled(true);
-         checkventas.setEnabled(true);
-         checkcaja.setEnabled(true);
-         checkalmacen.setEnabled(true);
-         checkinformes.setEnabled(true);
-         checkMan.setEnabled(true);
-         checkAdministracion.setEnabled(true);
+
      }
       public void Desactivarcampos(){
          TxtApellidoPat.setEnabled(false);
@@ -118,13 +112,7 @@ public class frmRegistrarUsuario extends javax.swing.JInternalFrame {
          Txtcontrasena.setEnabled(false);
          BtnRegistrarP.setEnabled(false);
          
-         checkcompras.setEnabled(false);
-         checkventas.setEnabled(false);
-         checkcaja.setEnabled(false);
-         checkalmacen.setEnabled(false);
-         checkinformes.setEnabled(false);
-         checkMan.setEnabled(false);
-         checkAdministracion.setEnabled(false);
+       
      }
        public void LimparCampos(){
         TxtDNI.setText("");
@@ -136,13 +124,6 @@ public class frmRegistrarUsuario extends javax.swing.JInternalFrame {
         TxtTelefono.setText("");
         Txtcontrasena.setText("");
         
-        checkcompras.setSelected(false);
-         checkventas.setSelected(false);
-         checkcaja.setSelected(false);
-         checkalmacen.setSelected(false);
-         checkinformes.setSelected(false);
-         checkMan.setSelected(false);
-         checkAdministracion.setSelected(false);
         
     }
     @SuppressWarnings("unchecked")
@@ -170,15 +151,6 @@ public class frmRegistrarUsuario extends javax.swing.JInternalFrame {
         BTNbUSCAR = new javax.swing.JButton();
         Txtcontrasena = new javax.swing.JPasswordField();
         jLabel12 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel13 = new javax.swing.JLabel();
-        checkcompras = new javax.swing.JCheckBox();
-        checkventas = new javax.swing.JCheckBox();
-        checkcaja = new javax.swing.JCheckBox();
-        checkalmacen = new javax.swing.JCheckBox();
-        checkinformes = new javax.swing.JCheckBox();
-        checkMan = new javax.swing.JCheckBox();
-        checkAdministracion = new javax.swing.JCheckBox();
 
         setClosable(true);
         setIconifiable(true);
@@ -295,7 +267,7 @@ public class frmRegistrarUsuario extends javax.swing.JInternalFrame {
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel4)
                         .addComponent(TxtDNI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(BTNbUSCAR, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(BTNbUSCAR, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(TxtApellidoPat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -327,104 +299,6 @@ public class frmRegistrarUsuario extends javax.swing.JInternalFrame {
                 .addGap(27, 27, 27))
         );
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel13.setFont(new java.awt.Font("Imprint MT Shadow", 1, 14)); // NOI18N
-        jLabel13.setText("ACCESOS");
-
-        checkcompras.setText("Compras");
-        checkcompras.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkcomprasActionPerformed(evt);
-            }
-        });
-
-        checkventas.setText("Ventas");
-        checkventas.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkventasActionPerformed(evt);
-            }
-        });
-
-        checkcaja.setText("Caja");
-        checkcaja.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkcajaActionPerformed(evt);
-            }
-        });
-
-        checkalmacen.setText("Almacen");
-        checkalmacen.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkalmacenActionPerformed(evt);
-            }
-        });
-
-        checkinformes.setText("Informes");
-        checkinformes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkinformesActionPerformed(evt);
-            }
-        });
-
-        checkMan.setText("Mantenimiento");
-        checkMan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkManActionPerformed(evt);
-            }
-        });
-
-        checkAdministracion.setText("Administracion");
-        checkAdministracion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkAdministracionActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(checkMan)
-                    .addComponent(checkventas)
-                    .addComponent(checkcompras)
-                    .addComponent(checkcaja)
-                    .addComponent(checkalmacen)
-                    .addComponent(checkinformes)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jLabel13)))
-                .addGap(53, 53, 53))
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(checkAdministracion)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel13)
-                .addGap(4, 4, 4)
-                .addComponent(checkcompras)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(checkventas)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(checkcaja)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(checkalmacen)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(checkinformes)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(checkMan)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(checkAdministracion)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -432,17 +306,13 @@ public class frmRegistrarUsuario extends javax.swing.JInternalFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -524,48 +394,6 @@ public class frmRegistrarUsuario extends javax.swing.JInternalFrame {
 //            }
     }//GEN-LAST:event_BTNbUSCARActionPerformed
 
-    private void checkcomprasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkcomprasActionPerformed
-        // TODO add your handling code here:
-        if(checkcompras.isSelected()) compras=1;
-        else if(!checkcompras.isSelected()) compras=0;
-    }//GEN-LAST:event_checkcomprasActionPerformed
-
-    private void checkventasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkventasActionPerformed
-        // TODO add your handling code here:
-        if(checkventas.isSelected()) ventas=1;
-        else if(!checkventas.isSelected()) ventas=0;
-    }//GEN-LAST:event_checkventasActionPerformed
-
-    private void checkcajaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkcajaActionPerformed
-        // TODO add your handling code here:
-         if(checkcaja.isSelected()) caja=1;
-        else if(!checkcaja.isSelected()) caja=0;
-    }//GEN-LAST:event_checkcajaActionPerformed
-
-    private void checkalmacenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkalmacenActionPerformed
-        // TODO add your handling code here:
-        if(checkalmacen.isSelected()) almacen=1;
-        else if(!checkalmacen.isSelected()) almacen=0;
-    }//GEN-LAST:event_checkalmacenActionPerformed
-
-    private void checkinformesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkinformesActionPerformed
-        // TODO add your handling code here:
-        if(checkinformes.isSelected()) informes=1;
-        else if(!checkinformes.isSelected()) informes=0;
-    }//GEN-LAST:event_checkinformesActionPerformed
-
-    private void checkManActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkManActionPerformed
-        // TODO add your handling code here:
-        if(checkMan.isSelected()) mantenimiento=1;
-        else if(!checkMan.isSelected()) mantenimiento=0;
-    }//GEN-LAST:event_checkManActionPerformed
-
-    private void checkAdministracionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkAdministracionActionPerformed
-        // TODO add your handling code here:
-        if(checkAdministracion.isSelected()) administracion=1;
-        else if(!checkAdministracion.isSelected()) administracion=0;
-    }//GEN-LAST:event_checkAdministracionActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BTNbUSCAR;
     private javax.swing.JButton BtnRegistrarP;
@@ -577,17 +405,9 @@ public class frmRegistrarUsuario extends javax.swing.JInternalFrame {
     private javax.swing.JTextField TxtNombre;
     private javax.swing.JTextField TxtTelefono;
     private javax.swing.JPasswordField Txtcontrasena;
-    private javax.swing.JCheckBox checkAdministracion;
-    private javax.swing.JCheckBox checkMan;
-    private javax.swing.JCheckBox checkalmacen;
-    private javax.swing.JCheckBox checkcaja;
-    private javax.swing.JCheckBox checkcompras;
-    private javax.swing.JCheckBox checkinformes;
-    private javax.swing.JCheckBox checkventas;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -596,7 +416,6 @@ public class frmRegistrarUsuario extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     // End of variables declaration//GEN-END:variables
 
 //    void setLocationRelativeTo(probarConexion aThis) {

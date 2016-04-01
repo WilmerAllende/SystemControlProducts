@@ -32,14 +32,7 @@ public class frmModificarUsuario extends javax.swing.JInternalFrame {
          TxtTelefono2.setEnabled(true);
          Txtcontrasena2.setEnabled(true);
          BtnRegistrarP2.setEnabled(true);
-         
-         checkcompras1.setEnabled(true);
-         checkventas1.setEnabled(true);
-         checkcaja1.setEnabled(true);
-         checkalmacen1.setEnabled(true);
-         checkinformes1.setEnabled(true);
-         checkMan1.setEnabled(true);
-         checkAdministracion.setEnabled(true);
+       
      }
       public void Desactivarcampos(){
          TxtApellidoPat2.setEnabled(false);
@@ -51,13 +44,7 @@ public class frmModificarUsuario extends javax.swing.JInternalFrame {
          Txtcontrasena2.setEnabled(false);
          BtnRegistrarP2.setEnabled(false);
          
-         checkcompras1.setEnabled(false);
-         checkventas1.setEnabled(false);
-         checkcaja1.setEnabled(false);
-         checkalmacen1.setEnabled(false);
-         checkinformes1.setEnabled(false);
-         checkMan1.setEnabled(false);
-         checkAdministracion.setEnabled(false);
+   
          
      }
        public void LimparCampos(){
@@ -70,13 +57,7 @@ public class frmModificarUsuario extends javax.swing.JInternalFrame {
         TxtTelefono2.setText("");
         Txtcontrasena2.setText("");
         
-         checkcompras1.setSelected(false);
-         checkventas1.setSelected(false);
-         checkcaja1.setSelected(false);
-         checkalmacen1.setSelected(false);
-         checkinformes1.setSelected(false);
-         checkMan1.setSelected(false);
-         checkAdministracion.setSelected(false);
+        
  
         
     }
@@ -155,15 +136,6 @@ public class frmModificarUsuario extends javax.swing.JInternalFrame {
         jLabel28 = new javax.swing.JLabel();
         BTNbUSCAR2 = new javax.swing.JButton();
         Txtcontrasena2 = new javax.swing.JPasswordField();
-        jPanel8 = new javax.swing.JPanel();
-        jLabel30 = new javax.swing.JLabel();
-        checkcompras1 = new javax.swing.JCheckBox();
-        checkventas1 = new javax.swing.JCheckBox();
-        checkcaja1 = new javax.swing.JCheckBox();
-        checkalmacen1 = new javax.swing.JCheckBox();
-        checkinformes1 = new javax.swing.JCheckBox();
-        checkMan1 = new javax.swing.JCheckBox();
-        checkAdministracion = new javax.swing.JCheckBox();
 
         setClosable(true);
         setIconifiable(true);
@@ -592,104 +564,6 @@ public class frmModificarUsuario extends javax.swing.JInternalFrame {
                 .addGap(120, 120, 120))
         );
 
-        jPanel8.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel30.setFont(new java.awt.Font("Imprint MT Shadow", 1, 14)); // NOI18N
-        jLabel30.setText("ACCESOS");
-
-        checkcompras1.setText("Compras");
-        checkcompras1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkcompras1ActionPerformed(evt);
-            }
-        });
-
-        checkventas1.setText("Ventas");
-        checkventas1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkventas1ActionPerformed(evt);
-            }
-        });
-
-        checkcaja1.setText("Caja");
-        checkcaja1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkcaja1ActionPerformed(evt);
-            }
-        });
-
-        checkalmacen1.setText("Almacen");
-        checkalmacen1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkalmacen1ActionPerformed(evt);
-            }
-        });
-
-        checkinformes1.setText("Informes");
-        checkinformes1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkinformes1ActionPerformed(evt);
-            }
-        });
-
-        checkMan1.setText("Mantenimiento");
-        checkMan1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkMan1ActionPerformed(evt);
-            }
-        });
-
-        checkAdministracion.setText("Administracion");
-        checkAdministracion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkAdministracionActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(checkMan1)
-                    .addComponent(checkventas1)
-                    .addComponent(checkcompras1)
-                    .addComponent(checkcaja1)
-                    .addComponent(checkalmacen1)
-                    .addComponent(checkinformes1)
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jLabel30)))
-                .addGap(53, 53, 53))
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(checkAdministracion)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel30)
-                .addGap(4, 4, 4)
-                .addComponent(checkcompras1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(checkventas1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(checkcaja1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(checkalmacen1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(checkinformes1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(checkMan1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(checkAdministracion)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -697,18 +571,14 @@ public class frmModificarUsuario extends javax.swing.JInternalFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -717,7 +587,7 @@ public class frmModificarUsuario extends javax.swing.JInternalFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 135, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 382, Short.MAX_VALUE)
@@ -734,14 +604,14 @@ public class frmModificarUsuario extends javax.swing.JInternalFrame {
             .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 131, Short.MAX_VALUE)
+                    .addGap(0, 135, Short.MAX_VALUE)
                     .addComponent(jInternalFrame1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 132, Short.MAX_VALUE)))
+                    .addGap(0, 136, Short.MAX_VALUE)))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 131, Short.MAX_VALUE)
+                    .addGap(0, 135, Short.MAX_VALUE)
                     .addComponent(jInternalFrame2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 132, Short.MAX_VALUE)))
+                    .addGap(0, 136, Short.MAX_VALUE)))
         );
 
         pack();
@@ -790,56 +660,6 @@ public class frmModificarUsuario extends javax.swing.JInternalFrame {
 //            }
 //        }
     }//GEN-LAST:event_BTNbUSCAR2ActionPerformed
-public void ComprobarCampos(){
-       if(checkcompras1.isSelected()) compras=1; else compras=0;
-       if(checkventas1.isSelected()) ventas=1; else  ventas=0;
-        if(checkcaja1.isSelected()) caja=1; else  caja=0;
-        if(checkalmacen1.isSelected()) almacen=1;else  almacen=0;
-        if(checkinformes1.isSelected()) informes=1;else  informes=0;
-        if(checkMan1.isSelected()) mantenimiento=1;else  mantenimiento=0;
-        if(checkAdministracion.isSelected()) administracion=1;else administracion=0;
-       }
-    private void checkcompras1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkcompras1ActionPerformed
-        // TODO add your handling code here:
-        if(checkcompras1.isSelected()) compras=1;
-        else if(!checkcompras1.isSelected()) compras=0;
-    }//GEN-LAST:event_checkcompras1ActionPerformed
-
-    private void checkventas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkventas1ActionPerformed
-        // TODO add your handling code here:
-        if(checkventas1.isSelected()) ventas=1;
-        else if(!checkventas1.isSelected()) ventas=0;
-    }//GEN-LAST:event_checkventas1ActionPerformed
-
-    private void checkcaja1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkcaja1ActionPerformed
-        // TODO add your handling code here:
-        if(checkcaja1.isSelected()) caja=1;
-        else if(!checkcaja1.isSelected()) caja=0;
-    }//GEN-LAST:event_checkcaja1ActionPerformed
-
-    private void checkalmacen1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkalmacen1ActionPerformed
-        // TODO add your handling code here:
-        if(checkalmacen1.isSelected()) almacen=1;
-        else if(!checkalmacen1.isSelected()) almacen=0;
-    }//GEN-LAST:event_checkalmacen1ActionPerformed
-
-    private void checkinformes1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkinformes1ActionPerformed
-        // TODO add your handling code here:
-        if(checkinformes1.isSelected()) informes=1;
-        else if(!checkinformes1.isSelected()) informes=0;
-    }//GEN-LAST:event_checkinformes1ActionPerformed
-
-    private void checkMan1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkMan1ActionPerformed
-        // TODO add your handling code here:
-        if(checkMan1.isSelected()) mantenimiento=1;
-        else if(!checkMan1.isSelected()) mantenimiento=0;
-    }//GEN-LAST:event_checkMan1ActionPerformed
-
-    private void checkAdministracionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkAdministracionActionPerformed
-        // TODO add your handling code here:
-        if(checkAdministracion.isSelected()) administracion=1;
-        else if(!checkAdministracion.isSelected()) administracion=0;
-    }//GEN-LAST:event_checkAdministracionActionPerformed
 
     private void BtnRegistrarP2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnRegistrarP2ActionPerformed
 //        if(ComprobaClave()){
@@ -883,13 +703,6 @@ public void ComprobarCampos(){
     private javax.swing.JPasswordField Txtcontrasena;
     private javax.swing.JPasswordField Txtcontrasena1;
     private javax.swing.JPasswordField Txtcontrasena2;
-    private javax.swing.JCheckBox checkAdministracion;
-    private javax.swing.JCheckBox checkMan1;
-    private javax.swing.JCheckBox checkalmacen1;
-    private javax.swing.JCheckBox checkcaja1;
-    private javax.swing.JCheckBox checkcompras1;
-    private javax.swing.JCheckBox checkinformes1;
-    private javax.swing.JCheckBox checkventas1;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JInternalFrame jInternalFrame2;
     private javax.swing.JLabel jLabel10;
@@ -912,7 +725,6 @@ public void ComprobarCampos(){
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -925,6 +737,5 @@ public void ComprobarCampos(){
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel8;
     // End of variables declaration//GEN-END:variables
 }
