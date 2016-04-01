@@ -137,7 +137,6 @@ public class frmPrincipal extends javax.swing.JFrame {
         jMenuItem17 = new javax.swing.JMenuItem();
         jSeparator16 = new javax.swing.JPopupMenu.Separator();
         jSeparator17 = new javax.swing.JPopupMenu.Separator();
-        jMenuItem9 = new javax.swing.JMenuItem();
         jSeparator18 = new javax.swing.JPopupMenu.Separator();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         menuventas = new javax.swing.JMenu();
@@ -158,13 +157,6 @@ public class frmPrincipal extends javax.swing.JFrame {
         jMenuItem11 = new javax.swing.JMenuItem();
         jSeparator10 = new javax.swing.JPopupMenu.Separator();
         jSeparator11 = new javax.swing.JPopupMenu.Separator();
-        jMenu41 = new javax.swing.JMenu();
-        jMenuItem26 = new javax.swing.JMenuItem();
-        jSeparator24 = new javax.swing.JPopupMenu.Separator();
-        jMenuItem50 = new javax.swing.JMenuItem();
-        jSeparator25 = new javax.swing.JPopupMenu.Separator();
-        jMenuItem49 = new javax.swing.JMenuItem();
-        jSeparator26 = new javax.swing.JPopupMenu.Separator();
         jSeparator12 = new javax.swing.JPopupMenu.Separator();
         jSeparator2 = new javax.swing.JPopupMenu.Separator();
         menualmacen = new javax.swing.JMenu();
@@ -354,14 +346,6 @@ public class frmPrincipal extends javax.swing.JFrame {
         jMenu20.add(jMenuItem17);
         jMenu20.add(jSeparator16);
         jMenu20.add(jSeparator17);
-
-        jMenuItem9.setText("Detalle Devolucion");
-        jMenuItem9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem9ActionPerformed(evt);
-            }
-        });
-        jMenu20.add(jMenuItem9);
         jMenu20.add(jSeparator18);
 
         menucompras.add(jMenu20);
@@ -429,32 +413,6 @@ public class frmPrincipal extends javax.swing.JFrame {
         menuventas.add(jMenuItem11);
         menuventas.add(jSeparator10);
         menuventas.add(jSeparator11);
-
-        jMenu41.setText("Detalle");
-
-        jMenuItem26.setText("Venta");
-        jMenuItem26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem26ActionPerformed(evt);
-            }
-        });
-        jMenu41.add(jMenuItem26);
-        jMenu41.add(jSeparator24);
-
-        jMenuItem50.setText("Devolucion");
-        jMenuItem50.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem50ActionPerformed(evt);
-            }
-        });
-        jMenu41.add(jMenuItem50);
-        jMenu41.add(jSeparator25);
-
-        jMenuItem49.setText("Tipo de Pago");
-        jMenu41.add(jMenuItem49);
-        jMenu41.add(jSeparator26);
-
-        menuventas.add(jMenu41);
         menuventas.add(jSeparator12);
         menuventas.add(jSeparator2);
 
@@ -725,10 +683,6 @@ public class frmPrincipal extends javax.swing.JFrame {
            // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem18ActionPerformed
 
-    private void jMenuItem26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem26ActionPerformed
- 
-    }//GEN-LAST:event_jMenuItem26ActionPerformed
-
     private void jMenuItem34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem34ActionPerformed
 //        ifrRegistrarCategoria proveedor = new ifrRegistrarCategoria();  //crear el nuevo formulario
 //        boolean mostrar=true;
@@ -772,15 +726,6 @@ public class frmPrincipal extends javax.swing.JFrame {
     private void jMenuItem24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem24ActionPerformed
 
     }//GEN-LAST:event_jMenuItem24ActionPerformed
-
-    private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
-        // TODO add your handling code here:
-      
-    }//GEN-LAST:event_jMenuItem9ActionPerformed
-
-    private void jMenuItem50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem50ActionPerformed
-      
-    }//GEN-LAST:event_jMenuItem50ActionPerformed
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         // TODO add your handling code here:
@@ -860,7 +805,6 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu35;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu40;
-    private javax.swing.JMenu jMenu41;
     private javax.swing.JMenu jMenu45;
     private javax.swing.JMenu jMenu46;
     private javax.swing.JMenu jMenu47;
@@ -895,7 +839,6 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem23;
     private javax.swing.JMenuItem jMenuItem24;
     private javax.swing.JMenuItem jMenuItem25;
-    private javax.swing.JMenuItem jMenuItem26;
     private javax.swing.JMenuItem jMenuItem29;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem30;
@@ -911,12 +854,9 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem44;
     private javax.swing.JMenuItem jMenuItem46;
     private javax.swing.JMenuItem jMenuItem48;
-    private javax.swing.JMenuItem jMenuItem49;
     private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem50;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem60;
-    private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator10;
     private javax.swing.JPopupMenu.Separator jSeparator11;
@@ -932,9 +872,6 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JPopupMenu.Separator jSeparator21;
     private javax.swing.JPopupMenu.Separator jSeparator22;
     private javax.swing.JPopupMenu.Separator jSeparator23;
-    private javax.swing.JPopupMenu.Separator jSeparator24;
-    private javax.swing.JPopupMenu.Separator jSeparator25;
-    private javax.swing.JPopupMenu.Separator jSeparator26;
     private javax.swing.JPopupMenu.Separator jSeparator27;
     private javax.swing.JPopupMenu.Separator jSeparator28;
     private javax.swing.JPopupMenu.Separator jSeparator29;
