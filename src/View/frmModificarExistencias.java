@@ -1,0 +1,439 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package View;
+
+//import Classes.ClsConexion;
+//import Classes.clsFunciones;
+//import Classes.clsProducto;
+//import Classes.clsRegistrosExistencias;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+import javax.swing.RowFilter;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableRowSorter;
+
+/**
+ *
+ * @author KELLY TG
+ */
+public class frmModificarExistencias extends javax.swing.JInternalFrame {
+
+    /**
+     * 
+     * Creates new form ModificarExistencias
+     */
+//      clsFunciones funciones = new clsFunciones();
+//    clsProducto RegistrosProductos = new clsProducto();
+//    clsRegistrosExistencias existencias = new clsRegistrosExistencias();
+//    String Fila[];
+//    int id,stockMin,stockMax;
+//    DefaultTableModel modelo;
+//     private TableRowSorter trsfiltro;
+//    String titulos[]={"CODIGO PRODUCTO","NOMBRE","MARCA","STOCK-MIN","STOCK-MAX","STOCK","PRECIO"};
+    public frmModificarExistencias() {
+        initComponents();
+//        GrupoBotones.add(rdbID);
+//         GrupoBotones.add(rdbNombre);
+//         GrupoBotones.add(rdbMarca);
+//         modelo = new DefaultTableModel(null,titulos){
+//            @Override 
+//            public  boolean isCellEditable ( int row ,  int column )  { 
+//                return  false ; 
+//            }
+//            };
+//        dlglistado.setModel(modelo);
+//        MostrarTotalProducto();
+//        ValidarFraccion(txtcantidad);
+    }
+    public void ValidarFraccion(JTextField a){
+        a.addKeyListener(new KeyAdapter() {
+           public void keyTyped(KeyEvent e){
+               char c=e.getKeyChar();
+               if(!Character.isDigit(c) && c!=46 ){
+                   getToolkit().beep();
+                   e.consume();
+               }
+           }
+                   
+        });
+    }
+    
+        public void MostrarTotalProducto(){
+        Connection cn;
+        Statement sentencia;
+        ResultSet reg;
+        String SQL;
+
+        
+//        try {
+//            SQL = "Select * from producto order by id DESC";
+//            cn = ClsConexion.getConexion();
+//            sentencia = cn.createStatement();
+//            reg=sentencia.executeQuery(SQL);
+//            //VERIFICAR SI HA DEVUELTO REGISTROS
+//              while(reg.next()){
+//                  
+//                
+//                  String Fila[]= {
+//                                        reg.getString("id"),
+//                                        reg.getString("nombre"),
+//                                        reg.getString("marca"),
+//                                        reg.getString("stockMinimo"),
+//                                        reg.getString("stockMaximo"),
+//                                        reg.getString("stock"),
+//                                        reg.getString("precio")};
+//                  modelo.addRow(Fila);
+//              }
+//                  
+                 
+              
+//            
+//            
+//        } catch (Exception e) {
+//            JOptionPane.showMessageDialog(this, e.getMessage().toString());
+//
+//            
+//        }
+    
+    }
+    
+//    public void filtro() {
+//    //Obtenemos el valor del JTextField para el filtro
+//    String filtro = TxtCodigo1.getText();
+//    // Identificamos cual es el JRadioButton seleccionado para filtrar el
+//    // resultado de acuerdo a los datos de la columna elegida
+//    if (rdbID.isSelected()) {
+//        int columna = 0;
+//        trsfiltro.setRowFilter(RowFilter.regexFilter(filtro, columna));
+//    } else if (rdbNombre.isSelected()) {
+//        int columna = 1;
+//        trsfiltro.setRowFilter(RowFilter.regexFilter(filtro, columna));
+//    } else if (rdbMarca.isSelected()) {
+//        int columna = 2;
+//        trsfiltro.setRowFilter(RowFilter.regexFilter(filtro, columna));
+//    }
+//}
+    
+ public void SoloNumeros(JTextField a){
+        a.addKeyListener(new KeyAdapter() {
+           public void keyTyped(KeyEvent e){
+               char c=e.getKeyChar();
+               if(!Character.isDigit(c)){
+                   getToolkit().beep();
+                   e.consume();
+               }
+           }
+                   
+        });
+    }
+    
+    
+    void limpiarTabla(){
+                while (dlglistado.getRowCount()!=0){
+                        ((DefaultTableModel)dlglistado.getModel()).removeRow(0);
+                }
+        }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        GrupoBotones = new javax.swing.ButtonGroup();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        txtcantidad = new javax.swing.JTextField();
+        jLabel20 = new javax.swing.JLabel();
+        BtnCerrarP = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        dlglistado = new javax.swing.JTable();
+        BtnRegistrarP1 = new javax.swing.JButton();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        TxtCodigo1 = new javax.swing.JTextField();
+        rdbID = new javax.swing.JRadioButton();
+        rdbNombre = new javax.swing.JRadioButton();
+        rdbMarca = new javax.swing.JRadioButton();
+
+        setClosable(true);
+        setIconifiable(true);
+        setTitle("Modificar Existencias");
+
+        jPanel1.setBackground(new java.awt.Color(0, 25, 66));
+
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+
+        txtcantidad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtcantidadActionPerformed(evt);
+            }
+        });
+
+        jLabel20.setFont(new java.awt.Font("Imprint MT Shadow", 1, 14)); // NOI18N
+        jLabel20.setText("Cantidad:");
+
+        BtnCerrarP.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        BtnCerrarP.setText("CERRAR");
+        BtnCerrarP.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        BtnCerrarP.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BtnCerrarP.setIconTextGap(-3);
+        BtnCerrarP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnCerrarPActionPerformed(evt);
+            }
+        });
+
+        dlglistado.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(dlglistado);
+
+        BtnRegistrarP1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        BtnRegistrarP1.setText("MODIFICAR");
+        BtnRegistrarP1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        BtnRegistrarP1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BtnRegistrarP1.setIconTextGap(-3);
+        BtnRegistrarP1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnRegistrarP1ActionPerformed(evt);
+            }
+        });
+
+        jLabel18.setFont(new java.awt.Font("Imprint MT Shadow", 1, 14)); // NOI18N
+        jLabel18.setText("Filtrar resultados por : ");
+
+        jLabel17.setFont(new java.awt.Font("Imprint MT Shadow", 1, 14)); // NOI18N
+        jLabel17.setText("Producto:");
+
+        TxtCodigo1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TxtCodigo1ActionPerformed(evt);
+            }
+        });
+        TxtCodigo1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                TxtCodigo1KeyTyped(evt);
+            }
+        });
+
+        rdbID.setText("CODIGO PRODUCTO");
+
+        rdbNombre.setText("NOMBRE");
+
+        rdbMarca.setText("MARCA");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(rdbID)
+                        .addGap(18, 18, 18)
+                        .addComponent(rdbNombre)
+                        .addGap(18, 18, 18)
+                        .addComponent(rdbMarca)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel17)
+                                .addGap(18, 18, 18)
+                                .addComponent(TxtCodigo1, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtcantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel20)
+                                .addGap(29, 29, 29))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(BtnCerrarP, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(BtnRegistrarP1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(13, 13, 13)))
+                        .addContainerGap(21, Short.MAX_VALUE))))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel18)
+                    .addComponent(rdbID)
+                    .addComponent(rdbNombre)
+                    .addComponent(rdbMarca))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel17)
+                            .addComponent(TxtCodigo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 461, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addComponent(jLabel20)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtcantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(48, 48, 48)
+                        .addComponent(BtnRegistrarP1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(BtnCerrarP, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+        );
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void txtcantidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcantidadActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtcantidadActionPerformed
+
+    private void BtnCerrarPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCerrarPActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnCerrarPActionPerformed
+
+    private void BtnRegistrarP1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnRegistrarP1ActionPerformed
+        // TODO add your handling code here:
+//        int nFila = dlglistado.getSelectedRow();
+//        float preciof;
+//        if (nFila >= 0) {
+//            if (txtcantidad.getText().equals("")) {
+//                JOptionPane.showMessageDialog(this, "Ingrese el stock");
+//            } else {
+//                String idS,stocMin,stocMax,precio;
+//                idS= (String) dlglistado.getValueAt(nFila,0);
+//                id=Integer.parseInt(idS);
+//                stocMin= (String) dlglistado.getValueAt(nFila, 3);
+//                stockMin= Integer.parseInt(stocMin);
+//                stocMax= (String) dlglistado.getValueAt(nFila, 4);
+//                stockMax= Integer.parseInt(stocMax);
+//                precio= (String) dlglistado.getValueAt(nFila, 6);
+//                preciof= Float.parseFloat(precio);
+//                
+//        
+//                if (Float.parseFloat(txtcantidad.getText()) >= stockMin && Float.parseFloat(txtcantidad.getText()) <= stockMax) {
+//                    //int idexistencia= existencias.MostrarodigoExistencia(id);
+//                    String msj[] = RegistrosProductos.ModificarStockProducto(Float.parseFloat(txtcantidad.getText()), id);
+//                    existencias.ModificarExistencias(id, Float.parseFloat(txtcantidad.getText()));
+//                    txtcantidad.setText("");
+//                    TxtCodigo1.setText("");
+//                    limpiarTabla();
+//                    MostrarTotalProducto();
+//
+//                } else {
+//                    JOptionPane.showMessageDialog(this, "Stock Incorrecto");
+//                }
+//
+//            }
+//        } else {
+//            JOptionPane.showMessageDialog(this, "SELECCIONE UN CAMPO DE LA TABLA");
+//        }
+
+    }//GEN-LAST:event_BtnRegistrarP1ActionPerformed
+
+    private void TxtCodigo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtCodigo1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtCodigo1ActionPerformed
+
+    private void TxtCodigo1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TxtCodigo1KeyTyped
+        // TODO add your handling code here:
+        // Comprobamos que el ButtonGroup que nosotros llamamos bGfiltar tenga
+        // seleccionado alguno de los tres JRadioButtons que le hemos agregado
+//        if (GrupoBotones.getSelection()==null) {
+//            // Si ninguno de los JRadioButtons está seleccionado, evitamos que se
+//            // escriba algo dentro del JTextField y mostramos un mensaje de error
+//            evt.consume();
+//            JOptionPane.showMessageDialog(this, "Debe seleccionar una opción del filtro", "Menaje de Error", JOptionPane.ERROR_MESSAGE);
+//        } else {
+//            // Añadimos al JTextField un KeyListener con un KeyAdapter. De esta
+//            // forma es como si dieramos enter cada vez que digitamos una techa
+//            TxtCodigo1.addKeyListener(new KeyAdapter() {
+//                @Override
+//                public void keyTyped(final KeyEvent e) {
+//                    // Llamamos al método encargado de realizar el filtro
+//                    filtro();
+//                }
+//            });
+//            // Inicializamos el objeto trsfiltro de la clase TableRowSorter con
+//            // el modelo de la tabla, que para nuestro caso es tabladatos
+//            trsfiltro = new TableRowSorter(modelo);
+//            // Añadimos al Jtable el filtro trsfiltro
+//            dlglistado.setRowSorter(trsfiltro);
+//        }
+    }//GEN-LAST:event_TxtCodigo1KeyTyped
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BtnCerrarP;
+    private javax.swing.JButton BtnRegistrarP1;
+    private javax.swing.ButtonGroup GrupoBotones;
+    private javax.swing.JTextField TxtCodigo1;
+    private javax.swing.JTable dlglistado;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JRadioButton rdbID;
+    private javax.swing.JRadioButton rdbMarca;
+    private javax.swing.JRadioButton rdbNombre;
+    private javax.swing.JTextField txtcantidad;
+    // End of variables declaration//GEN-END:variables
+}
