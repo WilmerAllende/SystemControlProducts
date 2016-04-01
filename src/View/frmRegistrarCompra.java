@@ -546,13 +546,13 @@ public class frmRegistrarCompra extends javax.swing.JInternalFrame {
         );
 
         jLabel3.setFont(new java.awt.Font("Matura MT Script Capitals", 1, 22)); // NOI18N
-        jLabel3.setText("Ferreteria Representaciones  ");
+        jLabel3.setText("Empresa ..........................");
 
         jLabel31.setFont(new java.awt.Font("Imprint MT Shadow", 1, 14)); // NOI18N
         jLabel31.setText("F & F Srl");
 
         jLabel32.setFont(new java.awt.Font("Imprint MT Shadow", 1, 14)); // NOI18N
-        jLabel32.setText("Dirección: Posope Alto - Patapo");
+        jLabel32.setText("Dirección: ...............");
 
         jPanel4.setBackground(new java.awt.Color(0, 25, 66));
         jPanel4.setPreferredSize(new java.awt.Dimension(10, 143));
@@ -569,7 +569,7 @@ public class frmRegistrarCompra extends javax.swing.JInternalFrame {
         );
 
         jLabel33.setFont(new java.awt.Font("Imprint MT Shadow", 1, 14)); // NOI18N
-        jLabel33.setText("RUC: 20480454996");
+        jLabel33.setText("RUC: ......................");
 
         jLabel34.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
         jLabel34.setText("VENTA");
@@ -778,7 +778,7 @@ public class frmRegistrarCompra extends javax.swing.JInternalFrame {
                     .addComponent(jLabel27)
                     .addComponent(txtdireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 202, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
                 .addGap(36, 36, 36)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
